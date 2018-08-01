@@ -9,8 +9,6 @@
 /build
 /captures
 .externalNativeBuild
-/app/src/test
-/app/src/androidTest
-/app/src/debug/
-/app/src/release/
-/app/build
+/src/test
+/src/androidTest
+
