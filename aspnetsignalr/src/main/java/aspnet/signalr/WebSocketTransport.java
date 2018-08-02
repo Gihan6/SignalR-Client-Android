@@ -10,7 +10,7 @@ import java.net.URISyntaxException;
 public class WebSocketTransport implements Transport {
     private WebSocketClient webSocketClient;
     private OnReceiveCallBack onReceiveCallBack;
-    private URI url;
+    public URI url;
 
     private static final String HTTP = "http";
     private static final String HTTPS = "https";
@@ -61,7 +61,7 @@ public class WebSocketTransport implements Transport {
         webSocketClient.closeConnection(0, "HubConnection Stopped");
     }
 
-    private WebSocketClient createWebSocket() {
+    public WebSocketClient createWebSocket() {
         return new WebSocketClient(url) {
              @Override
              public void onOpen(ServerHandshake handshakedata) {

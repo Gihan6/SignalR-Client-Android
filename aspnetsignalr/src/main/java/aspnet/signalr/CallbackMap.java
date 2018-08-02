@@ -15,12 +15,6 @@ public class CallbackMap {
         } else {
             handlers.put(target, new ArrayList<>(Arrays.asList(action)));
         }
-
-        /*handlers.computeIfPresent(target, (methodName, handlerList) -> {
-            handlerList.add(action);
-            return handlerList;
-        });
-        handlers.computeIfAbsent(target, (ac) -> new ArrayList<>(Arrays.asList(action)));*/
     }
 
     public Boolean containsKey(String key) {
